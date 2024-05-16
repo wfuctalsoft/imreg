@@ -1,0 +1,22 @@
+standItem{
+    background: rgb(44, 44, 44);
+    padding: 1.5rem;
+    display: inline;
+    border-radius: 2rem;
+    margin: 0.5rem;
+    max-width: 20rem;
+    text-align: left;
+}
+standItem > #name{
+    font-size:1rem;
+}
+standItem > #bio{
+    vertical-align:middle;
+    font-size:0.7rem;
+}
+standItem > #photo{
+    border-radius: 1rem;
+    float:left;
+    height: 7rem;
+    padding: 0.5rem;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/standItemStyle.css">
+    <title>Document</title>
+</head>
+<body>
+    <img id="background" src="/img.jpg">
+    <section id="firstSection">
+        <h2>«Ничто не забыто, никто не забыт.»</h2><br>
+        <h3>Запечатлите память о ваших прародителях, участвуйте в бессмертном полке онлайн.</h3><br>
+        <button id="participate" onclick="partClick(event)">Участвовать</button>
+    </section>
+    <section id="stand">
+        <h3>Стенд памяти</h3>
+        <div id="standContent">
+            <h4 id="lti">Загрузка стенда...</h4>
+        </div>
+    </section>
+    <div id="dataForm" style="display: none;">
+        <closebutton onclick="closeDialog(event)">✕</closebutton>
+        <div id="fstStage">
+            <h3>Прочтите согласие на обработку персональных данных</h3>
+            <div id="consent"></div>
+            <form onsubmit="consentSumbit(event)" id="consentSF">
+                <input type="checkbox" id="sumbitRadio">Я полностью прочитал согласие и полностью согласен с его условиями</input><br>
+                <input type="submit" disabled value="Продолжить" id="sumbitConsent">
+            </form>
+        </div>
+        <div id="sndStage" style="display: none;">
+            <h3>Заполните информацию для участия в бессмертном полку</h3>
+            <form onsubmit="dataSumbit(event)" id="partForm">
+                <input type="text" id="username" placeholder="Ваше ФИО" required><br>
+                <input type="email" id="email" placeholder="Ваш E-mail" required><br>
+                <input type="text" id="phonenumber" placeholder="Ваш номер телефона" required><br>
+                <input type="text" id="solidername" placeholder="ФИО вашего прародителя" required><br>
+                <textarea placeholder="Биография вашего прародителя (макс. 150 символов)" id="sbio" maxlength="150" required></textarea><br><br>
+                <label id="input-file" for="portrait">Загрузить портрет</label><br>
+                <input id="portrait" type="file" accept="Image/*" required><br>
+                <input type="submit" value="Продолжить" id="sumbitForm">
+            </form>
+        </div>
+        <div id="sendStage" style="display: none;">
+            <h3>Прикрепите скачанный файл к письму, затем отправьте нам на почту imregru13@gmail.com</h3><br>
+            <a href="mailto:imregru13@gmail.com">Отправить</a>
+            <a id="downloadData">Скачать</a>
+        </div>
+    </div>
+    <!-- <section id="partSect">
+        <h2>Примите участие</h2><br>
+        <form id="partForm" onsubmit="upload(event)">
+            <input type="email" placeholder="E-mail" id="emailI" name="emailI"><br>
+            <input type="text" placeholder="Имя вашего прародителя" id="nameI" name="nameI" maxlength="50"><br>
+            <textarea placeholder="Биография (макс. 150 символов)" id="bioI" name="bioI" rows="5" maxlength="150"></textarea><br><br>
+            <label id="input-file" for="portraitI">Загрузить портрет</label><br>
+            <input id="portraitI" name="portraitI" type="file" accept="Image/*"><br>
+            <input type="submit" accesskey="enter">
+        </form>
+    </section> -->
+    <section>
+    </section>
+</body>
+</html>
+<script src="script.js"></script>

@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+body{
+    margin: 0;
+}
+header{
+    border-radius: remvw;
+    margin: remvw;
+    padding: remvw;
+    background: repeating-linear-gradient(
+    45deg,
+    #000000,
+    #000000 100px,
+    #db8400 100px,
+    #db8400 200px
+    );
+    position: fixed;
+    width: calc(100% - 4vw);
+}
+#firstSection{
+    background: transparent;
+    text-align: center;
+    padding-top: 10vw;
+    padding-bottom: 10vw;
+}
+#firstSection > *{
+    display: inline-block;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+*{
+    font-family: "Open Sans";
+    color:aliceblue;
+    margin: 0;
+}
+h1{
+    font-size:6vh;
+}
+h2{
+    font-size:4.5vh;
+}
+h3{
+    font-size:3vh;
+}
+h4{
+    font-size:1.5vh;
+}
+button{
+    background-color: #db8400;
+    border-radius: 10rem;
+    border:none;
+    padding: 2vh 5vh 2vh 5vh;
+    cursor:pointer;
+}
+#consent{
+    overflow-y: scroll;
+    height: 50vh;
+    margin: 2vw;
+    text-align: center;
+}
+#participate{
+    font-size: 3vh;
+}
+#dataForm{
+    padding: 3em;
+    border-radius: 3vw;
+    position: fixed;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    background-color: #414141b9;
+    backdrop-filter: blur(5vw);
+    text-align: center;
+}
+#consentSF > *{
+    margin: 1vw;
+}
+#stand{
+    background: #414141c9;
+    text-align: center;
+    padding: 5vh 0 5vh 0;
+    margin: 1rem;
+    border-radius: 5rem;
+    backdrop-filter: blur(50px);
+}
+#standContent{
+    text-align: none;
+}
+#background{
+    perspective: 1vw;
+    filter: blur(10px);
+    z-index: -5;
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+}
+#partSect{
+    background: #414141c9;
+    text-align: center;
+    padding: 5vh 1vh 5vh 1vh;
+    margin: 1rem;
+    border-radius: 5rem;
+    backdrop-filter: blur(50px);
+}
+#partForm > *{
+    margin: 1vh;
+    width: 70vw
+}
+input[type="file"]{
+    display: none;
+}
+textarea{
+    text-align: left;
+    border: none;
+    border-radius: 1rem;
+    transition: all ease-in-out 200ms;
+    background: #414141;
+    padding: 1rem;
+    font-size:1rem;
+    text-orientation: upright;
+    resize: vertical;
+    resize: none;
+    transition: all ease-in-out 200ms;
+}
+input:hover, #input-file:hover, textarea:hover{
+    background: #2c2419;
+}
+input:focus, #input-file:focus, textarea:focus{
+    background: #463928;
+}
+#partForm > *{
+    width: 50vw;
+}
+input{
+    text-align: left;
+    border: none;
+    border-radius: 1rem;
+    transition: all ease-in-out 200ms;
+    background: #414141;
+    padding: 1rem;
+    font-size:1rem;
+    text-orientation: upright;
+}
+a{
+    text-align: left;
+    border: none;
+    border-radius: 1rem;
+    transition: all ease-in-out 200ms;
+    background: #414141;
+    padding: 1rem;
+    font-size:1rem;
+    text-orientation: upright;
+}
+input[type="sumbit"]{
+    text-align: left;
+    border: none;
+    border-radius: 1rem;
+    transition: all ease-in-out 200ms;
+    background: #414141;
+    padding: 1rem;
+    font-size:1rem;
+    text-orientation: upright;
+}
+#input-file{
+    border: none;
+    border-radius: 1rem;
+    transition: all ease-in-out 200ms;
+    background: #414141;
+    padding: 1rem;
+    font-size:1rem;
+}
+closebutton{
+    background: transparent;
+    color: white;
+    font-size: 3vh;
+    position: absolute;
+    right: 3vh;
+    top: 2vh;
+    cursor:pointer;
+}
